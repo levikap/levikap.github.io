@@ -1,38 +1,487 @@
-.App {
+:root {
+  --font: 'Avenir', Helvetica, sans-serif;
+  --blue: #6EB7FB;
+  --purple: #7A65FF;
+  --pink: #AE79FF;
+  --darkblue: #4F7CAC;
+}
+
+
+/* CSS for the header */
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav {
+  margin-left: 26vw;
+  margin-top: 0vh;
+  margin-right: 10vw;
+  border-bottom: 1px solid #6EB7FB;
+  position: fixed;
+  background-color: white;
+  z-index: 50;
+}
+
+.navBg {
+  margin-left: 26vw;
+  margin-right: 10vw;
+  width: 90vw;
+  height: 4vw;
+  z-index: 0;
+  display: inline-block;
+  position: fixed;
+  background-color: white;
+}
+
+.navitem {
+  float: left;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  font-size: 2.5vw;
+  font-family: var(--font);
+  font-weight: lighter;
+  color: black;
+  z-index: 10;
+}
+
+.navitem:hover {
+  color: var(--blue);
+}
+
+/* css for active class */
+.active {
+  color: var(--purple);
+}
+
+
+
+
+
+/* CSS for sidebar */
+.sidebar {
+  position: fixed;
+  width: 17vw;
+  height: 70vw;
+  left: 25vw;
+  right: 9.5vw;
+  top: 6vw;
+  /* bottom: 58.69vw; */
+}
+
+.sidebar h2 {
+  text-emphasis: none;
+  font-family: var(--font);
+  font-size: 1.6vw;
+  text-align: center;
+  margin-bottom: 0.2vw;
+}
+
+.sidebar h3 {
+  font-size: 1vw;
+  font-weight: 200;
+  font-family: var(--font);
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.sidebar h4 {
+  font-size: 1vw;
+  font-weight: 300;
+  font-family: var(--font);
+  margin-top: 0.2vw;
+  margin-bottom: 0px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headshot {
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headshot img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 11vw;
+  height: 12vw;
+  border-radius: 2vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.social {
+  margin-top: 1vw;
+  display: block;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.icon {
+  font-size: 1vw;
+  float: left;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+}
+
+.icon:hover {
+  color: var(--purple);
+}
+
+.downloadButton {
+  margin-top: 5vh;
+  margin-left: inherit;
+  margin-right: auto;
+}
+
+.downloadButtonBackground {
+  width: 8vw;
+  height: 2vw;
+  background-color: var(--purple);
+  /* display: block;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto; */
+  border-radius: 22px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.downloadButtonText {
+  font-style: var(--font);
   color: white;
+  font-size: 0.8vw;
+  /* display: block; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* text-align: center;
+  z-index: 10;
+  position: absolute; */
+  /* Center vertically and horizontally */
 }
 
-.App-link {
-  color: #61dafb;
+/* About CSS */
+.about {
+  margin-left: 26vw;
+  margin-top: 5vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about img {
+  object-fit: cover;
+  width: 61.3vw;
+  height: 25vw;
+  border-radius: 2vw;
+}
+
+.description {
+  margin-top: 1.5vw;
+  float: left;
+  width: 28vw;
+  margin-left: 1.5vw;
+  margin-right: 1vw;
+  font-size: 1vw;
+  font-family: var(--font);
+}
+
+.paragraph {
+  text-indent: 2em;
+}
+
+.aboutBreak {
+  width: 61.3vw;
+  height: 1px;
+  background-color: var(--purple);
+  margin-top: 14vw;
+}
+
+/* DevInterest CSS */
+
+.interests {
+  float: left;
+  display: inline-block;
+  margin-right: 1vw;
+}
+
+.interest2 {
+  margin-left: 23vw;
+}
+
+.interest3 {
+  margin-left: 46vw;
+}
+
+.backgroundSquare {
+  width: 15vw;
+  height: 10vw;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 22px;
+  z-index: 0;
+  margin-top: 2vw;
+  margin-bottom: 3vw;
+  display: inline-block;
+  position: absolute;
+}
+
+.titleSquare {
+  width: 10vw;
+  height: 1.5vw;
+  background-color: var(--blue);
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-top: 1.2vw;
+  margin-left: 0.5vw;
+  z-index: 10;
+  position: absolute;
+}
+
+.dev-title {
+  font-size: 1vw;
+  color: black;
+  font-style: var(--font);
+  margin-left: 0.77vw;
+  margin-top: 0.1vw;
+  z-index: 15;
+  position: absolute;
+}
+
+.textColumns {
+  display: flex;
+}
+
+.dev-column {
+  z-index: 10;
+  font-size: 1vw;
+  color: black;
+  position: absolute;
+  display: inline-flex;
+  float: left;
+  margin-left: 0vw;
+  margin-top: 2vw;
+  margin-right: 0vw;
+  font-style: var(--font);
+  font-size: 1vw;
+}
+
+.dev-column2 {
+  z-index: 20;
+  font-size: 1vw;
+  color: green;
+  position: absolute;
+  display: block;
+  float: left;
+  margin-left: 1.5vw;
+  margin-top: 0.5vw;
+  font-style: var(--font);
+  font-size: 1vw;
+}
+
+.myTimeline {
+  margin-top: 15vw;
+  margin-right: 3vw;
+  margin-left: 5vw;
+  position: absolute;
+}
+
+
+/* Title Component CSS */
+.title {
+  font-size: 2vw;
+  font-style: var(--font);
+}
+
+.titleBreak {
+    width: 61.3vw;
+    height: 1px;
+    background-color: var(--pink);
+}
+
+/* Subtitle Component CSS */
+.subtitle {
+  font-size: 1.5vw;
+  margin-left: 1vw;
+  margin-top: 0.5vw;
+  font-style: var(--font);
+  float: none;
+}
+
+.subtitleBreak {
+    width: 60.3vw;
+    height: 1px;
+    background-color: var(--darkblue);
+}
+
+.smallSubtitleBreak {
+    width: 29.65vw;
+    height: 1px;
+    background-color: var(--darkblue);
+}
+
+.education .title {
+  position: absolute;
+  z-index: 0;
+  margin-top: 13vw;
+  display: inline;
+}
+
+
+
+
+/* Projects CSS */
+.projects {
+  margin-left: 26vw;
+  margin-top: 5vw;
+}
+
+/* ProjectCard CSS */
+.projectCard {
+  margin-top: 1vw;
+  width: 177px;
+  height: 114px;
+  float: left;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+.projectRow {
+  float: left;
+}
+
+/* .projectTitle {
+  position: absolute;
+  font-size: 1vw;
+  font-style: var(--font);
+} */
+
+.projectCard:hover {
+  filter: blur(0.1vw);
+}
+
+.projectCard img {
+  object-fit: cover;
+  width: 10vw;
+  height: 6vw;
+  border-radius: 1.1vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* Work CSS */
+.work {
+  margin-left: 26vw;
+  margin-top: 5vw;
+}
+
+.workRow {
+  float: left;
+}
+
+.workRowLeft {
+  float: left
+}
+
+.workRowRight {
+  float: right;
+}
+
+
+/* Details CSS */
+.details {
+  margin-left: 26vw;
+  margin-top: 5vw;
+}
+
+.details Img {
+  object-fit: fit;
+  width: 51.3vw;
+  height: 27vw;
+  border-radius: 23px;
+  margin-left: 5vw;
+  margin-right:5vw;
+  margin-top: 1vw;
+}
+
+
+/* devDetails CSS */
+.devDetail1 {
+  float: left;
+  display: inline-block;
+  margin-right: 1vw;
+}
+
+.devDetail2 {
+  margin-left: 23vw;
+}
+
+.devDetail3 {
+  margin-left: 46vw;
+  margin-bottom: 8vw;
+}
+
+.devBackgroundSquare {
+  width: 15vw;
+  height: 5vw;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 22px;
+  z-index: 0;
+  margin-top: 2vw;
+  margin-bottom: 3vw;
+  display: inline-block;
+  position: absolute;
+}
+
+.dev-column ul {
+  z-index: 100;
+  font-size: 1vw;
+  color: black;
+  display: block;
+  float: left;
+  margin-left: -1vw;
+  margin-bottom: -0.8vw;
+  margin-top: 1vw;
+  width: 15vw;
+  font-style: var(--font);
+  font-size: 1vw;
+}
+
+
+
+
+/* Photography CSS */
+.photography {
+  margin-left: 26vw;
+  margin-top: 5vw;
+}
+
+
+/* Refs CSS */
+.refs {
+  margin-left: 26vw;
+  margin-top: 5vw;
+}
+
+/* Contact CSS */
+.contact {
+  margin-left: 26vw;
+  margin-top: 5vw;
+}
+
+
+
+
+/* Footer CSS */
+.footer {
+  margin-top: 15vw;
+  width: 61.5vw;
+  height: 10vw;
+  background-color: white;
+}
+
+.App {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
 }
