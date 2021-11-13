@@ -15,8 +15,8 @@ a:visited {
 }
 
 .nav {
-  margin-left: 26vw;
-  margin-top: 0vh;
+  margin-left: 35vw;
+  margin-top: 2vh;
   margin-right: 10vw;
   border-bottom: 1px solid #6EB7FB;
   position: fixed;
@@ -37,9 +37,9 @@ a:visited {
 
 .navitem {
   float: left;
-  margin-left: 1vw;
-  margin-right: 1vw;
-  font-size: 2.5vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  font-size: 1.5vw;
   font-family: var(--font);
   font-weight: lighter;
   color: black;
@@ -64,9 +64,9 @@ a:visited {
   position: fixed;
   width: 17vw;
   height: 70vw;
-  left: 25vw;
+  left: 20vw;
   right: 9.5vw;
-  top: 6vw;
+  top: 4vw;
   /* bottom: 58.69vw; */
 }
 
@@ -97,7 +97,7 @@ a:visited {
 }
 
 .headshot {
-  
+
 }
 
 .headshot img {
@@ -164,15 +164,9 @@ a:visited {
 
 /* About CSS */
 .about {
-  margin-left: 26vw;
+  margin-left: 36vw;
+  margin-right: 29vw;
   margin-top: 5vw;
-}
-
-.about img {
-  object-fit: cover;
-  width: 61.3vw;
-  height: 25vw;
-  border-radius: 2vw;
 }
 
 .description {
@@ -187,6 +181,26 @@ a:visited {
 
 .paragraph {
   text-indent: 2em;
+  font-family: var(--font);
+  text-align: justify;
+}
+
+.SectionTitle {
+  font-size: 1.2vw;
+  font-family: var(--font);
+  color: var(--purple);
+}
+
+.link {
+  font-size: 1vw;
+  font-family: var(--font);
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+.SubsectionTitle {
+  font-size: 1.1vw;
+  font-family: var(--font);
 }
 
 .aboutBreak {
