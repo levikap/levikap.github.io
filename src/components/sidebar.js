@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import headshot from '../assets/headshot.jpeg'
 import Social from './social.js'
-class SideBar extends Component {
+import Pdf from '../assets/resume.pdf';
 
+class SideBar extends Component {
   constructor(props) {
     super(props);
   }
@@ -10,7 +11,7 @@ class SideBar extends Component {
   render() {
     return(
       <div className="sidebar">
-          
+
         <div className="headshot">
           <img src={headshot} />
         </div>
@@ -22,7 +23,7 @@ class SideBar extends Component {
         <div className="downloadButton">
           <div className="downloadButtonBackground">
             <div className="downloadButtonText">
-                <a href="https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:c1809935-afd3-47f7-b56a-2d8d021cc0fb#pageNum=1"  class="downloadButtonText">Download CV</a></div>
+                <a href={Pdf} target = "_blank">Download CV</a></div>
           </div>
         </div>
         <Social />

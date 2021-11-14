@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Paper from '../assets/alg_dont_see_color.pdf';
 
 class Publications extends Component {
 
@@ -9,18 +10,30 @@ class Publications extends Component {
   render() {
     return(
         <div className="about">
-            <div className="paragraph">I am a Computer Science undergraduate student studying at Northeastern University
-             in Boston, set to graduate in May 2022. I am an undergraduate research assistant
-             supervised by Dr. Alan Mislove and Dr. Piotr Sapiezynski. My research has involved
-             looking into fairness and privacy of various platforms and their algorithms or data
-             systems. I am currently applying to Ph.D. programs and hope to matriculate at a
-             Graduate School next fall.</div>
+            <div className="SectionTitle">Published Papers</div>
+            <div className="SubsectionTitle">2019</div>
+            <div className="SubsectionTitle"><a href="https://arxiv.org/pdf/1912.07579.pdf"><u>"Algorithms that" Don't See Color":
+            Comparing Biases in Lookalike and Special Ad Audiences."</u></a></div>
+            <div className="paragraph"> Sapiezynski, Piotr, Avijit Ghosh, <b>Levi Kaplan</b>, Alan Mislove,
+             and Aaron Rieke. "Algorithms that" Don't See Color":
+             Comparing Biases in Lookalike and Special Ad Audiences."
+              arXiv preprint arXiv:1912.07579 (2019).
+              <div className="link">
+                <a href="https://arxiv.org/abs/1912.07579">
+                  Arxiv
+                </a>
+              </div>
+              <div className="link">
+                <a href={Paper} target="_blank">
+                  PDF
+                </a>
+              </div>
+              </div>
              <br></br>
-            <div className="SectionTitle">Research Interests</div>
-            <div className="paragraph">    I am broadly interested in studying the privacy,
-            security, and fairness of various algorithms and data systems through auditing
-            techniques. This also extends to studing methods for creating more fair, equitable,
-            and transparent systems that protect user data and have robust protections against discrimination.</div>
+             <div className="SubsectionTitle">2021</div>
+             <div className="SubsectionTitle">Measuring Biases in a Data Broker's Coverage</div>
+             <div className="paragraph"><b>Levi Kaplan</b>, Alan Mislove, and Piotr Sapieżyński.
+             "Measuring Biases in a Data Broker’s Coverage." (2021).</div>
 
         </div>
     )

@@ -106,7 +106,7 @@ a:visited {
   margin-right: auto;
   width: 11vw;
   height: 12vw;
-  border-radius: 2vw;
+  border-radius: 50%;
 }
 
 .social {
@@ -180,7 +180,6 @@ a:visited {
 }
 
 .paragraph {
-  text-indent: 2em;
   font-family: var(--font);
   text-align: justify;
 }
@@ -200,6 +199,7 @@ a:visited {
 
 .SubsectionTitle {
   font-size: 1.1vw;
+  font-weight: 500;
   font-family: var(--font);
 }
 

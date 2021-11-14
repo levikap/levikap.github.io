@@ -15,7 +15,7 @@ class Social extends Component {
           <a href="https://github.com/levikap" target="_blank"><FontAwesomeIcon icon={['fab', 'github']} /></a>
         </div>
         <div class="icon">
-          <a href="https://www.instagram.com/peachbeachstudios/" target="_blank"><FontAwesomeIcon icon={['fab', 'instagram']} /></a>
+          <a href="https://www.instagram.com/levi_takes_photos/" target="_blank"><FontAwesomeIcon icon={['fab', 'instagram']} /></a>
         </div>
         <div class="icon">
           <a href="https://www.linkedin.com/in/levi-kaplan" target="_blank"><FontAwesomeIcon icon={['fab', 'linkedin-in']} /></a>

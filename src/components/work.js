@@ -9,18 +9,21 @@ class Work extends Component {
   render() {
     return(
         <div className="about">
-            <div className="paragraph">I am a Computer Science undergraduate student studying at Northeastern University
-             in Boston, set to graduate in May 2022. I am an undergraduate research assistant
-             supervised by Dr. Alan Mislove and Dr. Piotr Sapiezynski. My research has involved
-             looking into fairness and privacy of various platforms and their algorithms or data
-             systems. I am currently applying to Ph.D. programs and hope to matriculate at a
-             Graduate School next fall.</div>
+            <div className="SectionTitle">Software Engineer Co-op, Veracode</div>
+            <div className="paragraph">In the Spring of 2020, I worked full-time as a Co-op at Veracode,
+            a SaaS application security company. While there, I worked on the Static Platform Team, which
+            involved creating features and maintaining the microservice architecture for clients to upload
+            static (i.e. not currently live) code, for it to then be scanned for security vulnerabilities.
+            While at Veracode, I upgraded the code to Java 11, added Pendo support, fixed numerous bugs,
+            and created an AWS Lambda service to determine the health of the system.</div>
              <br></br>
-            <div className="SectionTitle">Research Interests</div>
-            <div className="paragraph">    I am broadly interested in studying the privacy,
-            security, and fairness of various algorithms and data systems through auditing
-            techniques. This also extends to studing methods for creating more fair, equitable,
-            and transparent systems that protect user data and have robust protections against discrimination.</div>
+            <div className="SectionTitle">Research Assistant Co-op, Northeastern University</div>
+            <div className="paragraph">I participated in a full-time research Co-op in the Spring of
+            2021, working under the supervision of Dr. Alan Mislove and Dr. Piotr Sapiezynski.
+            During my six month Co-op, I performed research on the fairness of data collection by Experian,
+            a prominent data broker. I am head author of the paper that came out of this research, <i>
+            Measuring Biases in a Data Broker's Coverage</i>. In addition to this research project, I began work on
+            the StyleGAN Ad Delivery research project, which I am currently working on part time.</div>
 
         </div>
     )

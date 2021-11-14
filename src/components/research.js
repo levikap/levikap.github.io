@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import Paper from '../assets/alg_dont_see_color.pdf';
 class Research extends Component {
 
   constructor(props) {
@@ -10,6 +10,7 @@ class Research extends Component {
     return(
         <div className="about">
             <div className="SectionTitle">Algorithms that "Don't See Color"</div>
+            <br></br>
             <div className="paragraph">
               This research involved looking into Facebook's delivery of federally protected advertisements.
               In 2019 following a settlement in court, Facebook agreed to remove demographic attributes
@@ -26,8 +27,13 @@ class Research extends Component {
             <div className="SubsectionTitle">Paper</div>
               <div className="paragraph">
                 <div className="link">
-                  <a href="https://arxiv.org/pdf/1912.07579.pdf">
+                  <a href="https://arxiv.org/abs/1912.07579">
                     Arxiv
+                  </a>
+                </div>
+                <div className="link">
+                  <a href={Paper} target="_blank">
+                    PDF
                   </a>
                 </div>
               </div>
@@ -40,6 +46,7 @@ class Research extends Component {
                   </a>
               </div>
             </div>
+            <br></br>
             <div className="paragraph">ProPublica:
               <div className="link">
                 <a href="https://www.propublica.org/article/facebook-ads-can-still-discriminate-against-women-and-older-workers-despite-a-civil-rights-settlement">
@@ -49,6 +56,7 @@ class Research extends Component {
             </div>
              <br></br>
             <div className="SectionTitle">Measuring Biases in a Data Broker's Coverage</div>
+            <br></br>
             <div className="paragraph">This research paper sought to investigate whether there are demographic
             and socioeconomic disparities in the accuracy and coverage of a prominent Data Broker, Experian.
             Experian’s data is used to verify people as part of background checks for housing and employment,
@@ -59,6 +67,16 @@ class Research extends Component {
             young people, and those living in lower income areas were less likely to be in the database,
             and if they were, they were more likely to have inaccurate data.
             We plan to submit our findings to The Web Conference 2022.</div>
+            <br></br>
+            <div className="SectionTitle">StyleGAN Research Project</div>
+            <br></br>
+            <div className="paragraph">This ongoing research project seeks to explore the effect that the
+            characteristics of individuals in Facebook ads have on the delivery of those ads. Through analyzing tens
+            of thousands of computer-generated hyperrealistic faces using StyleGAN-2, we developed a method
+            to change only the demographics of a computer generated face, while keeping other facial characteristics
+            the same. In this way, we are able to adjust only the demographics of the people in the ads and explore
+            how that changes the delivery of that ad.</div>
+            <br></br><br></br>
 
         </div>
     )
