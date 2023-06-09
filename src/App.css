@@ -185,7 +185,7 @@ a:visited {
 }
 
 .SectionTitle {
-  font-size: 1.2vw;
+  font-size: 10vw;
   font-family: var(--font);
   color: var(--purple);
 }

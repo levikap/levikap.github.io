@@ -18,8 +18,8 @@ class App extends Component {
       <Fragment>
         <Helmet>
           <meta charSet="utf-8" />
-    6     <title>Levi Kaplan Portfolio</title>
-    7     <link rel="stylesheet" href="./App.css" />
+         <title>Levi Kaplan Portfolio</title>
+         <link rel="stylesheet" href="./App.css" />
         </Helmet>
       <div className="App">
           <BrowserRouter>
