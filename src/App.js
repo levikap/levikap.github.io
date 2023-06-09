@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react';
+import {Helmet} from 'react-helmet';
 import './App.css';
+import './Mobile.css';
 import SideBar from './components/sidebar.js';
 import NavBar from './components/navbar.js';
 import About from './components/about.js';
@@ -10,10 +12,16 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
 class App extends Component {
   render() {
+    let width = window.innerWidth;
+    if(width > 768) {
     return(
+      <Fragment>
+        <Helmet>
+          <meta charSet="utf-8" />
+    6     <title>Levi Kaplan Portfolio</title>
+    7     <link rel="stylesheet" href="./App.css" />
+        </Helmet>
       <div className="App">
-
-        <Fragment>
           <BrowserRouter>
             <div>
               <SideBar />
@@ -26,9 +34,21 @@ class App extends Component {
               </Routes>
             </div>
           </BrowserRouter>
-        </Fragment>
-      </div>
+          </div>
+      </Fragment>
     );
+  } else {
+    return(
+      <Fragment>
+      <Helmet>
+        <meta charSet="utf-8" />
+  6     <title>Levi Kaplan Portfolio</title>
+  7     <link rel="stylesheet" href="./Mobile.css" />
+      </Helmet>
+      <div className="App"></div>
+      </Fragment>
+    );
+  }
   }
 }
 
